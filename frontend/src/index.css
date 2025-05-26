@@ -1,0 +1,22 @@
+@import "tailwindcss";
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+  }
+  
+  /* Message Bubble Animation */
+  .message-enter {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  .message-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 300ms ease-in;
+  }
